@@ -7,7 +7,8 @@
 </head>
 <body>
     <script>
-        const calcTip = (bill) => {
+    // 1  
+  const calcTip = (bill) => {
   if (bill >= 50 && bill <= 300) {
     return bill * 0.15;
   } else {
@@ -15,6 +16,7 @@
   }
 };
 calcTip(100);
+  //2
 const bills = [125, 555, 44];
 const tips = [
   calcTip(bills[0]),
@@ -26,10 +28,44 @@ const total = [
   bills[1] + tips[1],
   bills[2] + tips[2]
 ];
+   // 3
 console.log(bills);
 console.log(tips);
 console.log(total);
 
+
+
+// 1
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+// 2
+mark.calcBMI();
+john.calcBMI();
+
+// 3
+if (mark.bmi > john.bmi) {
+  console.log(`${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${john.fullName}'s (${john.bmi.toFixed(1)})`);
+} else {
+  console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(1)}) is higher than ${mark.fullName}'s (${mark.bmi.toFixed(1)})`);
+}
     </script>
 </body>
 </html>

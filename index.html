@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>exercice</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 //     return bill * 0.20;
 //   }
 // };
-// calcTip(100);
+// console.log(calcTip(100));
 //   //2
 // const bills = [125, 555, 44];
 // const tips = [
@@ -42,7 +43,7 @@
 //   mass: 78,
 //   height: 1.69,
 //   calcBMI: function () {
-//     this.bmi = this.mass / this.height ** 2;
+//     this.bmi = (this.mass / this.height ** 2).toFixed(2);
 //     return this.bmi;
 //   }
 // };
@@ -52,69 +53,48 @@
 //   mass: 92,
 //   height: 1.95,
 //   calcBMI: function () {
-//     this.bmi = this.mass / this.height ** 2;
+//     this.bmi = (this.mass / this.height ** 2).toFixed(2);
 //     return this.bmi;
 //   }
 // };
 
 // // 2
-// mark.calcBMI();
-// john.calcBMI();
+// console.log(mark.calcBMI());
+// console.log(john.calcBMI());
 
-// // 3
+// // // 3
 // if (mark.bmi > john.bmi) {
-//   console.log(`${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${john.fullName}'s (${john.bmi.toFixed(1)})`);
+//   console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
 // } else {
-//   console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(1)}) is higher than ${mark.fullName}'s (${mark.bmi.toFixed(1)})`);
+//   console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
 // }
-// for (let i = 0; i < 10; i++) {
-//   console.log("hello", i);
-// }
-
-// const array =[ 22,295,176,400,37,105,10,1100,86,52]
-// const tips =[]
-// const total =[]
-// for ( var i=0;i<array.length;i++){
-//     console.log(array)
-// }
-
-// function (calcTip) {
-// if(array[i]<=300 && array[i]>=50){
-// const tips = array[i]*0.15 
-// }
-// }else{
-//     const tips = array[i]*0.2
-// }
-// var x=18
-// var message= x>=18 ? "i can drive" :"icant drive"
-// console.log(message)
-    </script>
- <div class="container">
-    <div class="header">
-    <h2>Again !</h2>
-    <h3>{Between 1 and 20}</h3>
+</script>
+ <div class="box">
+    
+    <div class="box1">
+        <h2>PLAYER 1</h2>
+        <h1>43</h1>
+        <h3>Current </h3>
+        <span>0</span>
     </div>
-    <div class="azeer">
-    <h1>Guess My Number</h1>
+    
+    
+    
+    <div class="box2">
+        <button class="but1">🔄New Game</button>
+        <img src="./images/dice-5.png" alt="" height="90px">
+         <button class="but2">🎲Roll Dice</button>
+          <button class="but3">🕹️Hold</button>
     </div>
-</div>
-<hr>
-<div class="main">
-<h1>?</h1>
+     <div class="box3">
+        
+          <h2>PLAYER 2</h2>
+          <h1>24</h1>
+          <h3>Current </h3>
+          <span>0</span>
+    </div>
+ </div>
 
-<div class="footer">
- 
-<div class="footer1">   
-<p></p>
-<h2>Check !</h2>
-</div>
-<div class="footer2">
-<h3>Start Guessing ...</h3>
-<h3>  💯Score : 20</h3>
-<h3>   😊Higherscore: 99999999</h3>
-</div>
-</div>
-
-
+<script src="app.js"></script>
 </body>
 </html>
